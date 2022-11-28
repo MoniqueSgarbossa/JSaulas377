@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquanto Tabuada</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    table {
+        border-collapse: collapse;
+        font-family: Ubuntu;
+    }
+
+    td {
+        padding: 6px;
+        text-align: center;
+    }
+
+    .titulo {
+        font-family: "Chilanka";
+        font-size: 25pt;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #0c490c;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    tr:hover {
+        background-color: rgb(209, 250, 209);
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <script>
+        var cont = 1;
+        var result;
+        var n = parseFloat(prompt("Digite um número para a tabuada:"));
+
+        document.write("<div class=container>")
+        document.write("<div class=main>")
+        document.write("<div class=titulo>Tabuada</div>")
+        document.write("<div class=tabela><table border=1>")
+
+        if (n >= 1 && n <= 10) {
+            while (cont <= 10) {
+                result = n * cont;
+                document.write("<tr>");
+                document.write("<td>" + n + "</td>");
+                document.write("<td> X </td>");
+                document.write("<td>" + cont + "</td>");
+                document.write("<td> = </td>");
+                document.write("<td>" + result + "</td>");
+                document.write("</tr>");
+                cont++;
+            }
+        } else {
+            alert("ERRO! Verifique o número digitado!");
+        }
+        document.write("</div>")
+        document.write("</table></div>")
+        document.write("</div>");
+
+    </script>
+</body>
+
+</html>

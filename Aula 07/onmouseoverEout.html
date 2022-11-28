@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On mouse over e out</title>
+    <script>
+        function over() {
+            document.getElementById("botao").disabled = true;
+            document.getElementById("botao").value = "Não vai conseguir";
+        }
+
+        function out() {
+            document.getElementById("botao").disabled = false;
+            document.getElementById("botao").value = "Tente Clicar Aqui";
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Tente Clicar Aqui" id="botao" onmouseover="over()" onmouseout="out()">
+</body>
+
+</html>

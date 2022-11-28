@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onfocus e Onblur</title>
+
+    <script>
+        function ob() {
+            // Coloca um estilo pra o elemento
+            document.getElementById("text").style.backgroundColor = "blue";
+        }
+
+        function of() {
+            document.getElementById("text").style.backgroundColor = "red";
+        }
+    </script>
+
+</head>
+
+<body>
+    <input type="text" name="text" id="text" onblur="ob()" onfocus="of()">
+</body>
+
+</html>

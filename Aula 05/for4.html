@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For 4</title>
+</head>
+
+<body>
+    <script>
+        var depar;
+        var func;
+        var cont;
+        var salario;
+        var somaS = 0;
+        var somaD = 0;
+        var cont2;
+        var somaT = 0;
+
+        for (cont = 1; cont <= 2; cont++) {
+            depar = prompt("Qual o nome do departamento?");
+            somaS = 0;
+            somaD = 0;
+            for (cont2 = 1; cont2 <= 2; cont2++) {
+                func = prompt("Qual o nome do funcionário?");
+                salario = parseFloat(prompt("Qual o salário do funcionário"));
+                somaS = somaS + salario;
+            }
+            somaD = somaD + somaS;
+            alert("Soma departamentos: " + somaD);
+            somaT = somaD + somaT;
+        }
+        alert("Soma dos Salários: " + somaT)
+    </script>
+</body>
+
+</html>

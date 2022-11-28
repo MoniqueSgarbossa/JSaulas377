@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função SE Simples</title>
+</head>
+
+<body>
+    <script>
+        var nome = prompt("Digite o nome do aluno:");
+        var nota1 = parseFloat(prompt("Digite a 1ª nota do aluno:"));
+        var nota2 = parseFloat(prompt("Digite a 2ª nota do aluno:"));
+        var nota3 = parseFloat(prompt("Digite a 3ª nota do aluno:"));
+        var media = (nota1 + nota2 + nota3) / 3;
+
+        if (media >= 7) {
+            document.write("O aluno(a) " + nome + " foi Aprovado(a) com a média " + media);
+        } else {
+            document.write("O aluno(a) " + nome + " foi Reprovado(a) com a média " + media);
+        }
+    </script>
+</body>
+
+</html>

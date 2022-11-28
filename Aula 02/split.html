@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Separação - Split</title>
+</head>
+
+<body>
+    <script>
+        var link = "www.google.com.br";
+        var separacao = link.split(".");
+        document.write(separacao[0] + "<br>");
+        document.write(separacao[1] + "<br>");
+        document.write(separacao[2] + "<br>");
+        document.write(separacao[3] + "<br>");
+
+        document.write("<hr>");
+
+        // ---------------------------
+
+        var nasc = "20/08/2007";
+        var separar = nasc.split("/");
+        var dia = separar[0];
+        var mes = separar[1];
+        var ano = separar[2];
+
+        var idade = 2022 - ano;
+        document.write("A sua idade é " + idade);
+
+    </script>
+</body>
+
+</html>

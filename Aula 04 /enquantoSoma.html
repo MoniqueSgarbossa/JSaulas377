@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquanto Soma</title>
+</head>
+
+<body>
+    <script>
+        var cont = 1;
+        var num;
+        var qtd = prompt("Quantos número você quer somar?");
+        var soma = 0;
+
+        while (cont <= qtd) {
+            num = parseFloat(prompt("Digite um número para a soma:"));
+            soma = soma + num;
+            cont++;
+        }
+        alert("Soma Final: " + soma);
+    </script>
+</body>
+
+</html>

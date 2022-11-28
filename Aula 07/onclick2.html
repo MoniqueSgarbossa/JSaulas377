@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+
+    <script>
+        function imc() {
+            // Pega o valor do elemento pelo id
+            var altura = document.getElementById("altura").value;
+            var peso = document.getElementById("peso").value;
+            var calc = peso / (altura * altura);
+            document.getElementById("mostrar").innerHTML = calc.toFixed(2);
+            // Ele escreve na página/ no comando 
+        }
+    </script>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Ubuntu";
+        }
+
+        .form {
+            width: 200px;
+            height: 300px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 20px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: white;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: aqua;
+        }
+
+        .group-input {
+            margin-bottom: 60px;
+        }
+
+        input {
+            border: 0px;
+            border-bottom: 2px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 14pt;
+        }
+
+        button {
+            width: 100%;
+            border: 1px solid black;
+            height: 30px;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 13pt;
+            background-color: aqua;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        button:hover {
+            border: 1px solid aqua;
+            color: aqua;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div class="group-input">
+            <label for="altura">Altura:</label><br>
+            <input type="text" name="altura" id="altura">
+        </div>
+        <div class="group-input">
+            <label for="peso">Peso:</label><br>
+            <input type="text" name="peso" id="peso">
+        </div>
+        <button onclick="imc()">Calcular</button>
+        <p id="mostrar"></p>
+    </div>
+</body>
+
+</html>

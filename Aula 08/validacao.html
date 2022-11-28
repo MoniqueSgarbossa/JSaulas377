@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação</title>
+    <script>
+        function validar(frm) {
+            var nome = document.getElementById("nome").value;
+            var fone = document.getElementById("fone").value;
+            var email = document.getElementById("email").value;
+            var erro;
+            var n = 0;
+
+            if (nome == "") {
+                erro = "Preencha o nome. <br>";
+                n++;
+            } else {
+                erro = "";
+            }
+
+            if (fone == "") {
+                erro += "Preencha o telefone <br>";
+                n++;
+            }
+
+            if (email == "") {
+                erro += "Preencha o email <br>";
+                n++;
+            }
+            if (n > 0) {
+                document.getElementById("erros").innerHTML = "<b>" + n + " erro(s) encontrado(s): <br></b> " + erro;
+                return false;
+            }
+            frm.submit();
+
+            alert("Nome:" + nome + "\n" + "Telefone: " + fone + "\n" + "Email: " + email + "\n" + "Informações gravadas com sucesso!!");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="titulo">Cadastro</div>
+            <div class="formulario">
+                <form action="validacao.html" onsubmit="validar(this); return false">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <br>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="fone">Telefone:</label>
+                        <br>
+                        <input type="text" name="fone" id="fone">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="botao">
+                        <input type="submit" value="Gravar">
+                    </div>
+                </form>
+            </div>
+            <div class="final">
+                <hr> <br>
+                <p id="erros"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

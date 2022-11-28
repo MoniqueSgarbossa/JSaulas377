@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias Vividos - Método 1</title>
+</head>
+<script>
+    function diasVividos() {
+        var diaNasc = document.getElementById("diaNasc").value;
+        var mesNasc = document.getElementById("mesNasc").value;
+        var anoNasc = document.getElementById("anoNasc").value;
+
+        var diaAtual = document.getElementById("diaAtual").value;
+        var mesAtual = document.getElementById("mesAtual").value;
+        var anoAtual = document.getElementById("anoAtual").value;
+
+        var dataNasc = (new Date(anoNasc, mesNasc, diaNasc)).getTime();
+        var dataAtual = (new Date(anoAtual, mesAtual, diaAtual)).getTime();
+
+        var diasvividos = (dataAtual - dataNasc) / 1000 / 60 / 60 / 24;
+
+        document.getElementById("resultado").innerHTML = diasvividos;
+    }
+</script>
+
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4">Primeiro Método</td>
+        </tr>
+        <tr>
+            <td>Data de Nascimento</td>
+            <td>Dia: <input type="number" name="diaNasc" id="diaNasc"></td>
+            <td>Mês: <input type="number" name="mesNasc" id="mesNasc"></td>
+            <td>Ano: <input type="number" name="anoNasc" id="anoNasc"></td>
+        </tr>
+        <tr>
+            <td>Data de Atual</td>
+            <td>Dia: <input type="number" name="diaAtual" id="diaAtual"></td>
+            <td>Mês: <input type="number" name="mesAtual" id="mesAtual"></td>
+            <td>Ano: <input type="number" name="anotual" id="anoAtual"></td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="diasVividos()">Calcular</button>
+    <br>
+    <p id="resultado">??</p>
+</body>
+
+</html>

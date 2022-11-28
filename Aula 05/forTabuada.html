@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Tabuada</title>
+</head>
+
+<body>
+    <script>
+        var result;
+        var cont;
+        var nTabuada = parseFloat(prompt("Digite um número pra a tabuada!"));
+
+        if (nTabuada <= 0 || nTabuada > 10) {
+            alert("ERRO! Verifique o número!!");
+        } else {
+            for (cont = 1; cont <= 10; cont++) {
+                result = nTabuada * cont;
+                document.write(nTabuada + " X " + cont + " = " + result + "<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>

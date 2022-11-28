@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On mouse Down</title>
+    <script>
+        function segurou() {
+            document.getElementById("texto").innerHTML = "Clicando";
+        }
+
+        function soltou() {
+            document.getElementById("texto").innerHTML = "Soltou o Clique";
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Clique Aqui" id="botao" onmousedown="segurou()" onmouseup="soltou()">
+    <br>
+    <br>
+    <p id="texto"></p>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Parametro 3</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Chilanka";
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        margin-top: 150px;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .cb {
+        background-color: rgb(87, 11, 119);
+        color: white;
+        font-weight: bold;
+        font-size: 15pt;
+    }
+
+    .cb:hover {
+        background-color: rgb(87, 11, 119);
+    }
+
+    tr:hover {
+        background-color: rgb(218, 206, 237);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <table border="1">
+                <tr class="cb">
+                    <td>Num 1</td>
+                    <td>Op</td>
+                    <td>Num 2</td>
+                    <td>Total</td>
+                </tr>
+                <script>
+                    function calculadora(n1, op, n2) {
+                        if (op == "+") {
+                            var result = n1 + n2
+                        } else if (op == "-") {
+                            var result = n1 - n2
+                        } else if (op == "*") {
+                            var result = n1 * n2
+                        } else if (op == "/") {
+                            var result = n1 / n2
+                        } else {
+                            alert("ERRO!")
+                        }
+                        document.write("<tr>")
+                        document.write("<td>" + n1 + "</td>")
+                        document.write("<td>" + op + "</td>")
+                        document.write("<td>" + n2 + "</td>")
+                        document.write("<td>" + result.toFixed(0) + "</td>")
+                        document.write("</tr>")
+
+                        // document.write(n1 + " " + op + " " + n2 + " = " + result + "<br>");
+                    }
+
+                    calculadora(5, "*", 7);
+                    calculadora(200, "/", 6);
+                    calculadora(89, "+", 8);
+                    calculadora(56, "-", 1);
+                </script>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
