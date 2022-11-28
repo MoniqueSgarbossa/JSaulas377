@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<script>
+    /**
+     * $ define o acesso para o jQuery
+     * (seletor) para procurar os elementos do HTML
+     * ação() para definir uma ação para o elemento
+     *
+    */
+
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("div").animate({
+                left: '800px'
+            });
+        });
+    });
+</script>
+
+<body>
+    <h3>Clique no botão para animar a div</h3>
+    <div style="background-color:greenyellow;height:50px;width:50px;position:absolute;"></div>
+    <br><br><br><br>
+    <button>Clique Aqui</button>
+</body>
+
+</html>
