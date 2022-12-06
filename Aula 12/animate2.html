@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").animate({
+                    height: "+=150px",
+                    width: "+=150px"
+                });
+            });
+        });
+    </script>
+
+    <button>Começar a Animação</button>
+    <br><br>
+    <div style="background-color:rgb(187, 255, 0);height:100px;width:100px;"></div>
+
+</body>
+
+</html>

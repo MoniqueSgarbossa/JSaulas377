@@ -319,7 +319,28 @@ function mensagem(){
 }
 
 
+jQuery
+É uma biblioteca que reduz em muito o trabalho de codificação e permite-nos fazer coisas complicadas como animações de uma forma fácil. jQuery pode rodar em qualquer navegador, como o firefox, internet explorer, safari, chrome, etc, sem nenhum impedimento. Para poder utilizar ele voce precisa sempre inserí-lo no seu HTML.
+Sintaxe basica
+$(seletor).ação()
 
+$ define o acesso para o jQuery
+(seletor) para procurar elementos no HTML
+acao() para definir uma ação para o elemento
+
+Document Ready
+Todos os métodos do jQuery em nossos exemplos estarão dentro de um evento chamado: $(document).ready(function(){
+})
+Isso evita que qualquer código seja executado antes que o documento seja totalmente carregado.
+
+Seletor por Tag
+o seletor de elemento/tag seleciona elementos com base na tag
+ex: $("p")
+
+Seletor por Id
+Usa o atributo id de uma tag HTML para encontrar o elemento especifico. Um id deve ser único dentro de uma página, então você deve usar o seletor #id quando quiser encontrar um único elemento
+ex: $("#exemplo")
+                                                                                                                                                                                                                                                                                           
 
 
 
