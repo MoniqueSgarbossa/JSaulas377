@@ -341,9 +341,31 @@ Seletor por Id
 Usa o atributo id de uma tag HTML para encontrar o elemento especifico. Um id deve ser único dentro de uma página, então você deve usar o seletor #id quando quiser encontrar um único elemento
 ex: $("#exemplo")
                                                                                                                                                                                                                                                                                            
+Eventos:
+Um dos mais comuns e também um dos mais importantes é o evento do clique, que pode ser utilizado em elementos além dos botões também. O evento click também pode ser substituido por outros eventos, como por exemplo: hover,mouseleave, blur, focus;
+Ex:
+$(document).ready(function(){
+	$("#texto").click(function(){
+		alert("Olá");
+	})
+})
 
-
-
+Efeitos:
+O diferencial do jQuery está na facilidade de realizar as tarefas, inclusive aplicar efeitos na página de forma bem simples.
+Hide: Oculta o elemento selecionado;
+Show: Faz aparecer um elemenhto oculto;
+SlideDown/SlideUp: O evento slide permite que objeto "escorreguem pela página", tanto para baixo(down) quando para cima(up).
+Animate: Consegue animar algum elemento.
+Ex:
+$(document).ready(function(){
+	$("button").click(function(){
+		$("div").animate({
+			height:"toggle",
+			width:"toggle"
+		})
+	})
+})
+Um outro atributo interessante é o "toggle", que basicamente é para ocultar ou fazer aparecer um objeto (semelhante a exemplos anteriores);  
 
 
 

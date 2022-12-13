@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <style>
+        #painel,
+        #flip {
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            background-color: greenyellow;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        #painel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#painel").slideDown(4000);
+            });
+            $("#stop").click(function () {
+                $("#painel").stop();//Para a animação
+            });
+        });
+    </script>
+
+    <button id="stop">Pare a Animação</button>
+    <div id="flip">Clique para começar a descer</div>
+    <div id="painel">Olá Galera da 377</div>
+</body>
+
+</html>
