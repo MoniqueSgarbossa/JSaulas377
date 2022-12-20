@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<script>
+    $(document).ready(function () {
+        $("div").last().css({
+            // Retorna o ultimo elemento selecionado
+            "border": "2px solid red",
+            "font-weight": "bold"
+        })
+    })
+</script>
+<style>
+    div {
+        border: 2px solid lightgray;
+        margin: 20px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <h1>Seja bem vindo ao meu site!!</h1>
+    <div>
+        <p>Esse é o meu primeiro site</p>
+        <p>Testando jQuery</p>
+    </div>
+    <div>
+        <p>Este é um parágrafo</p>
+        <p>Esse também é</p>
+    </div>
+</body>
+
+</html>

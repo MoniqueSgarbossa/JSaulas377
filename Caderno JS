@@ -367,6 +367,22 @@ $(document).ready(function(){
 })
 Um outro atributo interessante é o "toggle", que basicamente é para ocultar ou fazer aparecer um objeto (semelhante a exemplos anteriores);  
 
+Manipulação de DOM (Documente Object Model)
+Uma parte muito importante do jQuery é a possibilidade de manipular o DOM. O jQuery vem com vários métodos relacionados ao DOM que facilitam o acesso e a manipulação de elementos e atributos.
+Pegar conteúdo da página:
+text() - Retorna o contepúdo de texto dos elementos selecionados
+html() - Retorna o conteúdo dos elementos selecionados (incluindo tags HTML)
+val() - Retorna o valor dos campos de um formulário
+
+Definir conteúdo da página:
+text() - Define o conteúdo de texto dos elementos selecionados.
+html() - Define o conteúdo dos elementos selecionados (incluindo tags HTML)
+val() - Define o valor dos campos de um formulário
+
+Outra maneira de inserimos elementos na página sem apagar o que já existe, ou removê-los por completo, é usando o método append() para inserir, e remove() para remover.
+Além do mais podemos também aplicar formataçaões de CSS usando jQuery também, basta usar a função css() onde quiser aplica-lo e como parâmetro informar quais são as informações desejadas.
+
+
 
 
 
